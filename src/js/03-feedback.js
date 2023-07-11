@@ -1,6 +1,9 @@
+import '../css/common.css';
+import '../css/03-feedback.css';
 import throttle from 'lodash.throttle';
 
-/*const LOCAL_KEY = 'feedback-form-state';
+const LOCAL_KEY = 'feedback-form-state';
+
 form = document.querySelector('.feedback-form');
 
 form.addEventListener('input', throttle(onInputData, 500));
@@ -33,9 +36,9 @@ function onFormSubmit(e) {
   localStorage.removeItem(LOCAL_KEY);
   e.currentTarget.reset();
   dataForm = {};
-}*/
+}
 
-const LOCAL_KEY = 'feedback-form-state';
+/*const LOCAL_KEY = 'feedback-form-state';
 let formData = JSON.parse(localStorage.getItem(LOCAL_KEY)) || {};
 
 form = document.querySelector('.feedback-form');
@@ -71,4 +74,4 @@ function reloadPage() {
     email.value = formData.email || '';
     message.value = formData.message || '';
   }
-}
+}*/
